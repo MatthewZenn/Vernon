@@ -1,0 +1,43 @@
+body, html {
+    background-color: #27292c;
+}
+
+@font-face {
+    font-family: SegoeIcons;
+    src:url("../Assets/Segoe Fluent Icons.ttf");
+}
+
+#input {
+    position: absolute;
+    width: 75%;
+    height: 30px;
+    bottom: 10px;
+    left: 10px;
+    background-color: #1a1b1d;
+    border: none;
+    border-radius: 25px;
+    font-size: 14pt;
+    padding: 10px;
+    outline: none;
+}
+
+::placeholder {
+    color: #535963;
+}
+
+#send {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    bottom: 10px;
+    right: 5px;
+    border: none;
+    font-size: 25pt;
+    padding: 5px;
+    outline: none;
+    font-family: SegoeIcons;
+    background: -webkit-linear-gradient(45deg, #A61CFF, #FFA6B4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
