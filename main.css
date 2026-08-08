@@ -1,0 +1,65 @@
+[theme = 'dark'] {
+  --backdrop: black;
+  --color: antiquewhite;
+}
+
+[theme = 'light'] {
+  --backdrop: antiquewhite;
+  --color: black;
+}
+
+@font-face {
+  font-family: Grained;
+  src: url(Assets/Grained.ttf);
+}
+
+body, html {
+  background-color: var(--backdrop);
+  transition-duration: 0.35s;
+}
+
+h1 {
+  position: fixed;
+  top: -10px;
+  left: 5px;
+  font-family: Grained;
+  font-size: 30pt;
+  font-style: italic;
+  color: var(--color);
+}
+
+#prompt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14pt;
+  height: 20%;
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--color);
+  font-family: Grained;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  resize: none;
+  pointer-events: none;
+}
+
+#generate {
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 250px;
+  height: 50px;
+  background-color: transparent;
+  color: var(--color);
+  border: 1px solid var(--color);
+  border-radius: 5px;
+  font-family: Grained;
+  font-size: 14pt;
+}
